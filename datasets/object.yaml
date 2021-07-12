@@ -1,0 +1,27 @@
+# COCO 2017 dataset http://cocodataset.org - first 128 training images
+# Train command: python train.py --data coco128.yaml
+# Default dataset location is next to YOLOv5:
+#   /parent
+#     /datasets/coco128
+#     /yolov5
+
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+# path: ../datasets/coco128  # dataset root dir
+train: ./object/images/train/  # train images (relative to 'path') 128 images
+val: ./object/images/val/  # val images (relative to 'path') 128 images
+# test:  # test images (optional)
+
+# Classes
+nc: 49  # number of classes
+names: ['CA001', 'CA002', 'CA003', 'CA004', 'CD001', 'CD002', 
+'CD003', 'CD004', 'CD005', 'CD006', 'ZA001', 'ZA002', 'ZA003', 
+'ZA004', 'ZA005', 'ZA006', 'ZB001', 'ZB002', 'ZB003', 'ZB004', 'ZB005', 
+'ZB006', 'ZB007', 'ZB008', 'ZB009', 'ZB010', 'ZC001', 'ZC002', 'ZC003', 
+'ZC004', 'ZC005', 'ZC006', 'ZC007', 'ZC008', 'ZC009', 'ZC010', 'ZC011',
+ 'ZC012', 'ZC013', 'ZC014', 'ZC015', 'ZC016', 'ZC017', 'ZC018', 'ZC019', 
+ 'ZC020', 'ZC021', 'ZC022', 'ZC023']  # class names
+
+
+# Download script/URL (optional)
+# download: https://github.com/ultralytics/yolov5/releases/download/v1.0/coco128.zip
