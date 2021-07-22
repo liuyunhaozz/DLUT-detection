@@ -3,12 +3,12 @@
 import os, random, shutil
 # from posix import times_result
 def moveFile(img_Dir, label_Dir):
-        img_path = os.listdir(img_Dir)    #取图片的原始路径
+        img_path = os.listdir(img_Dir)    # 取图片的原始路径
         # print(len(img_path))
         filenumber = len(img_path)
-        rate = 0.1    #自定义抽取图片的比例，比方说100张抽10张，那就是0.1
+        rate = 0.1    # 自定义抽取图片的比例，比方说100张抽10张，那就是0.1
         picknumber = int(filenumber * rate) #按照rate比例从文件夹中取一定数量图片
-        sample = random.sample(img_path, picknumber)  #随机选取picknumber数量的样本图片
+        sample = random.sample(img_path, picknumber)  # 随机选取picknumber数量的样本图片
         # print(sample)
         for val_name in sample:
             shutil.move(img_Dir + val_name, val_img_tarDir + val_name)

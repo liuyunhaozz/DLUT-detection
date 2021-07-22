@@ -1,0 +1,6 @@
+START
+Goal_ID=CA002;Num=1
+Goal_ID=ZC004;Num=3
+Goal_ID=ZC011;Num=1
+Goal_ID=ZC001;Num=2
+END
