@@ -1,0 +1,29 @@
+python my_detect.py --source ../DLUT-detection/datasets/object/images/val/color1071.jpg --weights best.pt --save-txt
+
+
+
+python my_detect.py --source ../DLUT-detection/val/color16.jpg --weights m.pt --save-txt 
+
+
+
+
+
+exp11 ----   m.pt
+
+
+
+exp12 ----x.pt
+
+
+
+exp13 --- l.pt
+
+vscode  tensorboard 插件 安装了 tb_profiler tensorboard
+
+
+2651
+2668；
+2804
+
+
+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
